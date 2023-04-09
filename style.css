@@ -1,0 +1,22 @@
+:root{
+    --clr-cyan:hsl(176, 68%, 64%);
+    --clr-blue:hsl(198, 60%, 50%);
+    --clr-red:hsl(0, 100%, 63%);
+    --clr-white:hsl(0, 0, 100%);
+
+    --clr-mirage-1:hsl(217, 28%, 15%);
+    --clr-mirage-2:hsl(220, 27%, 13%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--clr-mirage-2);
+    color: var(--clr-white);
+}
