@@ -2,7 +2,6 @@
     --clr-cyan:hsl(176, 68%, 64%);
     --clr-blue:hsl(198, 60%, 50%);
     --clr-red:hsl(0, 100%, 63%);
-    --clr-white:hsl(0, 0, 100%);
 
     --clr-mirage-1:hsl(217, 28%, 15%);
     --clr-mirage-2:hsl(220, 27%, 13%);
@@ -14,9 +13,139 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body{
     background-color: var(--clr-mirage-2);
-    color: var(--clr-white);
+    width: 100%;
+}
+
+p,
+h1,
+a{
+    color: white;
+}
+
+/* ==================== HEADER ===================== */
+
+
+/* ==================== HEADER : NAVBAR ==================== */
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+header .navbar ul li a{
+    font-size: 0.8em;
+    margin-right: 0.6em;
+}
+
+header .logo{
+   font-size: 1.4em;
+   color: white
+}
+
+/* ================= CONTAINER : IMG ====================== */
+
+.fylo-intro__first-img{
+    position: relative;
+    width: 40vmax;
+    margin-top: 2em;
+    z-index: 2;
+}
+
+.fylo-intro__background-mobile{
+    position: relative;
+    bottom: 3.5rem;
+}
+
+/* ================= CONTAINER : INTRODUCTION ====================== */
+
+.container{
+    text-align: center;
+}
+
+.fylo-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fylo-intro h1{
+    transform: translate(0px, -124px);
+    font-size: 1.6em;
+}
+
+.fylo-intro p{
+    transform: translate(0px, -100px);
+    width: 90%;
+}
+
+.btn{
+    color: white;
+    transform: translate(0px, -70px);
+    min-width: 40vmax;
+    max-width: 40vmax;
+    height: 8vmax;
+    border-radius: 100vmax;
+    background: linear-gradient(90deg, rgba(101,226,217,1) 2%, rgba(51,158,192,1) 100%);
+    border: none;
+    cursor: pointer;
+}
+
+/* ================= CONTAINER : FEATURES / ICONS ====================== */
+
+.fylo-icons__first,
+.fylo-icons__second,
+.fylo-icons__third,
+.fylo-icons__fourth{
+    margin-top: 6rem;
+}
+
+.fylo-icons__title{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 1rem;
+}
+/* ================= CONTAINER-SECOND: PICTURE ====================== */
+
+.container-second__img{
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.container-second__img img{
+    position: relative;
+    width: 40vmax;
+    margin-top: 2em;
+}
+
+/* ================= CONTAINER-SECOND: TEXT ====================== */
+
+.container-second__title{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.container-second__text{
+    padding: 1rem;
+}
+
+.container-second__text a{
+    color: var(--clr-cyan);
+    text-decoration: underline;
+}
+
+/* ================= CONTAINER-THIRD: REVIEW ====================== */
+
+.container-third{
+    display: grid;
+    place-content: center;
 }
