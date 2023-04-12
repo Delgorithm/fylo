@@ -89,6 +89,7 @@ header .logo{
 .fylo-intro h1{
     transform: translate(0px, -124px);
     font-size: 1.6em;
+    padding: 0.4rem;
 }
 
 .fylo-intro p{
@@ -210,6 +211,26 @@ header .logo{
     margin: 1rem 2rem 8rem;
 }
 
+.container-third__profil-picture{
+    width: 3vmax;
+    border-radius: 100vmax;
+}
+
+.container__profil{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.bg-quotes{
+    position: absolute;
+    width: 2vmax;
+    z-index: 1;
+    transform: translate(-10px, -25px);
+}
+
+
+
 /* ================= CONTAINER-FOURTH: EARLY ACCESS ====================== */
 
 .container-fourth__access{
@@ -234,6 +255,13 @@ header .logo{
     font-size: 1em;
 }
 
+.btn-input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
 .container-fourth__access input{
     height: 8vmax;
     text-indent: 2rem;
@@ -252,8 +280,6 @@ header .logo{
     border-radius: 100vmax;
     background: linear-gradient(90deg, rgba(101,226,217,1) 2%, rgba(51,158,192,1) 100%);
     border: none;
-    /* min-width: 45vmax;
-    max-width: 60vmax; */
     cursor: pointer;
 }
 
@@ -303,7 +329,7 @@ footer{
 
 /* ================================ MEDIA QUERIES ================================ */
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 700px){
     .fylo-icons{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -316,7 +342,84 @@ footer{
     }
 
     .fylo-icons__fourth{
-        transform: translate(0px, 12px);
+        transform: translate(0px, 12px);    
+    }
+
+    .fylo-intro__first-img{
+        display: block;
+    }
+
+    .btn-get-started{
+        font-size: 1.35em;
     }
     
+    .container-second{
+       display: flex;
+       align-items: center;
+    }
+
+    .container-third__review-first,
+    .container-third__review-second,
+    .container-third__review-third{
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .container-third{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+     }
+
+     .container-fourth__access input{
+        font-size: 1.35em;
+        width: 30rem;
+        align-self: center;
+     }
+
+     .btn-access{
+        font-size: 1.35em;
+        width: 30rem;
+        align-self: center;
+     }
+}   
+
+@media screen and (min-width: 1100px){
+
+    .container-second__title{
+        font-size: 2em;
+    }
+    
+    .access-title{
+        font-size: 2em;
+    }
+    
+    .btn-input{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .btn-access{
+        transform: translate(10px, -12px);
+    }
+
+    .container-fourth__access input,
+    .btn-access{
+        height: 5vmax;
+    }
 }
+
+/* Errors and msitakes I've found so far
+
+- Too many divs for nothing
+- Too much spaghetti code
+- Images and font are not exactly responsive. Even not responsive at all
+- I need to use clamp, min, max
+- Not enough commentary
+- Wrong background
+- Wrong footer
+- Wrong icons (colors)
+
+*/
