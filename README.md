@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://fylo-bice.vercel.app/)
+- Live Site URL: [https://fylo-bice.vercel.app/
 
 ## My process
 
@@ -37,6 +37,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/delgorithm)
-- Twitter - [@yourusername](https://www.twitter.com/delgorithm)
+- Frontend Mentor - [@Delgorithm](https://www.frontendmentor.io/profile/delgorithm)
+- Twitter - [@Delgorithm](https://www.twitter.com/delgorithm)
